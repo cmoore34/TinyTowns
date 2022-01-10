@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tiny Towns Solo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.4.0.min.js"></script>
+    <script src="Buildings.js"></script>
+    <script src="Deck.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="gameContainer">
+        <div class="hand">
+            <div id="card0" class="card" data-resource=""></div>
+            <div id="card1" class="card" data-resource=""></div>
+            <div id="card2" class="card" data-resource=""></div>
+        </div>
+        <div class="town">
+            <div id="r0c0" class="cell" data-resource="" data-building=""></div>
+            <div id="r0c1" class="cell" data-resource="" data-building=""></div>
+            <div id="r0c2" class="cell" data-resource="" data-building=""></div>
+            <div id="r0c3" class="cell" data-resource="" data-building=""></div>
+            <div id="r1c0" class="cell" data-resource="" data-building=""></div>
+            <div id="r1c1" class="cell" data-resource="" data-building=""></div>
+            <div id="r1c2" class="cell" data-resource="" data-building=""></div>
+            <div id="r1c3" class="cell" data-resource="" data-building=""></div>
+            <div id="r2c0" class="cell" data-resource="" data-building=""></div>
+            <div id="r2c1" class="cell" data-resource="" data-building=""></div>
+            <div id="r2c2" class="cell" data-resource="" data-building=""></div>
+            <div id="r2c3" class="cell" data-resource="" data-building=""></div>
+            <div id="r3c0" class="cell" data-resource="" data-building=""></div>
+            <div id="r3c1" class="cell" data-resource="" data-building=""></div>
+            <div id="r3c2" class="cell" data-resource="" data-building=""></div>
+            <div id="r3c3" class="cell" data-resource="" data-building=""></div>
+        </div>
+        <div class='patternList'>
+            <div class='patternCard'><div class='buildingName'>Cottage</div><img class='buildingSVG' src='SVG/Buildings/Cottage.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+            <div class='patternCard'><div class='buildingName'>Chapel</div><img class='buildingSVG' src='SVG/Buildings/Chapel.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+            <div class='patternCard'><div class='buildingName'>Well</div><img class='buildingSVG' src='SVG/Buildings/Well.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+            <div class='patternCard'><div class='buildingName'>Farm</div><img class='buildingSVG' src='SVG/Buildings/Farm.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+            <div class='patternCard'><div class='buildingName'>Tavern</div><img class='buildingSVG' src='SVG/Buildings/Tavern.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+            <div class='patternCard'><div class='buildingName'>Theater</div><img class='buildingSVG' src='SVG/Buildings/Theater.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+            <div class='patternCard'><div class='buildingName'>Factory</div><img class='buildingSVG' src='SVG/Buildings/Factory.svg' /><div class='patternIMG'></div><div class='scoring'></div></div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.card').click(function() {
+    $(this).addClass("selected");
+    if ($(this).hasClass("selected") && game.played === "") {
+        var cardnum = this.id.substr(this.id.length - 1)
+        var resourcePlayed = $(this).data("resource");
+        game.play(cardnum);
+        $(this).removeClass(resourcePlayed.toLowerCase());
+        $(this).text("");
+        $(this).data("resource", "");
+    }
+});
+$('.cell').click(function() {
+    var row = parseInt(this.id.substr(1, 1));
+    var col = parseInt(this.id.substr(3, 3));
+    var firstResource = $(this).data("resource");
+    var resourcePlayed = game.played.toLowerCase();
+
+    if (firstResource === "" && resourcePlayed !== "" && $(this).data('resource') == '' && $(this).data('building') == '') {
+        $(this).addClass(resourcePlayed);
+        $(this).data("resource", resourcePlayed);
+        $('.card').attr('class', 'card');
+        refillHand(false);
+        game.played = "";
+        $('.cell').each(function(el) {
+            var row = parseInt(this.id.substr(1, 1));
+            var col = parseInt(this.id.substr(3, 3));
+            var firstResource = $(this).data("resource");
+            if (firstResource !== "") {
+                checkBuilding(row, col, firstResource);
+                if ($(this).buildingCount() > 1) {
+                    $(this).addClass('multiBuilding');
+                }
+            }
+        });
+    } else if ($(this).is('[class$="Found"]')) {
+        var building = $(this).buildingFind();
+        placeBuilding(row, col, firstResource, building);
+    }
+});
+</script>
+
+</html>

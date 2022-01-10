@@ -1,0 +1,149 @@
+:root {
+    --stone: slategrey;
+    --wheat: wheat;
+    --glass: deepskyblue;
+    --brick: firebrick;
+    --wood: saddlebrown;
+    --tavern: #00a86b;
+    --cottage: #14e6f1;
+    --chapel: #FFAE19;
+    --theater: #ffec00;
+    --farm: #ff1a1a;
+    --factory: #3b3b3b;
+    --multi: purple;
+    --well: slategrey;
+}
+
+html {
+    background-color: grey;
+}
+
+.stone {
+    background-color: var(--stone) !important;
+}
+
+.wheat {
+    background-color: var(--wheat) !important;
+}
+
+.glass {
+    background-color: var(--glass) !important;
+}
+
+.brick {
+    background-color: var(--brick) !important;
+}
+
+.wood {
+    background-color: var(--wood) !important;
+}
+
+.tavernFound {
+    border: 3px solid var(--tavern) !important;
+    filter: brightness(120%);
+}
+
+.wellFound {
+    border: 3px solid var(--stone) !important;
+    filter: brightness(120%);
+}
+
+.cottageFound {
+    border: 3px solid var(--cottage) !important;
+    filter: brightness(120%);
+}
+
+.chapelFound {
+    border: 3px solid var(--chapel) !important;
+    filter: brightness(120%);
+}
+
+.theaterFound {
+    border: 3px solid var(--theater) !important;
+    filter: brightness(120%);
+}
+
+.farmFound {
+    border: 3px solid var(--farm) !important;
+    filter: brightness(120%);
+}
+
+.factoryFound {
+    border: 3px solid var(--factory) !important;
+    filter: brightness(120%);
+}
+
+.multiBuilding {
+    border: 3px solid var(--multi) !important;
+    filter: brightness(120%);
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: ". . cardhand . ." ". . town . ." "patternList patternList patternList patternList patternList";
+}
+
+.hand {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: cardhand;
+    margin-bottom: 20px;
+}
+
+.hand .card {
+    height: 80px;
+    width: 50px;
+    justify-self: center;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.town {
+    display: grid;
+    width: 250px;
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-area: town;
+}
+
+.town .cell {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    justify-self: center;
+    /* background-image: url(SVG/Backgrounds/Background.svg); */
+    background-color: white;
+    border: 2px solid black;
+}
+.patternList {
+    margin-top: 10px;
+    display: grid;
+    grid-area: patternList;
+    grid-template-columns: repeat(7, 1fr);
+}
+.patternCard {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "buildingName . . . buildingSVG"
+        ". . patternIMG . ."
+        ". scoring scoring scoring .";
+    height: 180px;
+    width: 170px;
+    background-color:white;
+}
+.buildingName {
+    grid-area: buildingName
+}
+.buildingSVG {
+    grid-area: buildingSVG
+}
+.patternIMG {
+    grid-area: patternIMG
+}
+.scoring {
+    grid-area: scoring
+}
