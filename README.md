@@ -25,21 +25,19 @@ There are MANY different building options in the base game of Tiny Towns, but im
 The Cottage:
 
 Score 3 VP if this building is _fed_
-Pattern:
+
 ![Cottage Pattern Small](https://user-images.githubusercontent.com/51708157/149029214-9de6b200-e4f5-4947-89d4-d5429aaec0ae.png)
 
 Chapel:
 
 Score 1 VP for each _fed_ Cottage
 
-Pattern:
 ![Chapel Pattern Small](https://user-images.githubusercontent.com/51708157/149029196-4f1e1848-5f8d-44b6-b5a3-175dd5561bf4.png)
 
 Farm:
 
 Feeds 4 buildings anywhere in your town
 
-Pattern:
 ![Farm Pattern Small](https://user-images.githubusercontent.com/51708157/149029181-c98f3292-8811-4bb1-8fd2-cc75fd2cdcc6.png)
 
 Tavern:
@@ -50,28 +48,24 @@ Taverns |  1  |  2  |  3  |  4  |  5  |
 
 VPs     |  2  |  5  |  9  |  14 |  20 |
 
-Pattern:
 ![Tavern Pattern Small](https://user-images.githubusercontent.com/51708157/149029169-065e4612-44d6-453f-91b0-d1349964bf61.png)
 
 Well:
 
 Score 1 VP for each adjacent Cottage
 
-Pattern:
 ![Well Pattern Small](https://user-images.githubusercontent.com/51708157/149029154-b68d91ad-22dd-469f-bb40-9a58c68e174a.png)
 
 Theater:
 
 Score 1 VP for each other unique building type in the same row and column as the built Theater
 
-Pattern:
 ![Theater Pattern Small](https://user-images.githubusercontent.com/51708157/149029136-057daee1-6c88-474e-8f72-3ab8c87dfddc.png)
 
 Factory:
 
 When constructed, place 1 of the 5 resources on the constructed factory. When another player names this resource (or you select this resource from your hand) you may place any resource you want instead.
 
-Pattern:
 ![Factory Pattern Small](https://user-images.githubusercontent.com/51708157/149029116-0e17f31e-e78b-4826-90b2-554c429f4554.png)
 
 Why are you doing this?
