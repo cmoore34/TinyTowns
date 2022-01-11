@@ -21,40 +21,56 @@ You have a deck of 15 cards, containing 3 cards of each resource in the game (Br
 Okay what are the buildings and how do they score
 -------
 There are MANY different building options in the base game of Tiny Towns, but im only going to program for the teaching game case. Those buildings are
+
 The Cottage:
+
 Score 3 VP if this building is _fed_
 Pattern:
 ![image (17)](https://user-images.githubusercontent.com/51708157/149024726-ca23d43e-cd27-4a83-8b3c-8ea21dd499a0.png)
 
 Chapel:
+
 Score 1 VP for each _fed_ Cottage
+
 Pattern:
 ![image (18)](https://user-images.githubusercontent.com/51708157/149024941-e6325d6e-5485-43a9-b5e2-f36f74edbced.png)
 
 Farm:
+
 Feeds 4 buildings anywhere in your town
+
 Pattern:
 ![image (20)](https://user-images.githubusercontent.com/51708157/149025381-2a4362d0-85dc-4487-9109-1714f3d64982.png)
 
 Tavern:
+
 Score VP based on the number of constructed Taverns in your town
+
 Taverns |  1  |  2  |  3  |  4  |  5  |
+
 VPs     |  2  |  5  |  9  |  14 |  20 |
+
 Pattern:
 ![image (19)](https://user-images.githubusercontent.com/51708157/149025980-d20fa843-872e-448b-9b9f-8762a623c93e.png)
 
 Well:
+
 Score 1 VP for each adjacent Cottage
+
 Pattern:
 ![image (16)](https://user-images.githubusercontent.com/51708157/149026183-d0e9724c-441e-4cae-b11b-b61799d8c552.png)
 
 Theater:
+
 Score 1 VP for each other unique building type in the same row and column as the built Theater
+
 Pattern:
 ![image (18)](https://user-images.githubusercontent.com/51708157/149026393-54d055ef-8b38-4831-a225-b9fe8456ca7d.png)
 
 Factory:
+
 When constructed, place 1 of the 5 resources on the constructed factory. When another player names this resource (or you select this resource from your hand) you may place any resource you want instead.
+
 Pattern:
 ![image (17)](https://user-images.githubusercontent.com/51708157/149026673-6657e21a-6627-4fb3-a7e8-61e08d34687d.png)
 
