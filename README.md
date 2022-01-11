@@ -26,21 +26,21 @@ The Cottage:
 
 Score 3 VP if this building is _fed_
 Pattern:
-![image (17)](https://user-images.githubusercontent.com/51708157/149024726-ca23d43e-cd27-4a83-8b3c-8ea21dd499a0.png)
+![Cottage Pattern Small](https://user-images.githubusercontent.com/51708157/149029214-9de6b200-e4f5-4947-89d4-d5429aaec0ae.png)
 
 Chapel:
 
 Score 1 VP for each _fed_ Cottage
 
 Pattern:
-![image (18)](https://user-images.githubusercontent.com/51708157/149024941-e6325d6e-5485-43a9-b5e2-f36f74edbced.png)
+![Chapel Pattern Small](https://user-images.githubusercontent.com/51708157/149029196-4f1e1848-5f8d-44b6-b5a3-175dd5561bf4.png)
 
 Farm:
 
 Feeds 4 buildings anywhere in your town
 
 Pattern:
-![image (20)](https://user-images.githubusercontent.com/51708157/149025381-2a4362d0-85dc-4487-9109-1714f3d64982.png)
+![Farm Pattern Small](https://user-images.githubusercontent.com/51708157/149029181-c98f3292-8811-4bb1-8fd2-cc75fd2cdcc6.png)
 
 Tavern:
 
@@ -51,28 +51,28 @@ Taverns |  1  |  2  |  3  |  4  |  5  |
 VPs     |  2  |  5  |  9  |  14 |  20 |
 
 Pattern:
-![image (19)](https://user-images.githubusercontent.com/51708157/149025980-d20fa843-872e-448b-9b9f-8762a623c93e.png)
+![Tavern Pattern Small](https://user-images.githubusercontent.com/51708157/149029169-065e4612-44d6-453f-91b0-d1349964bf61.png)
 
 Well:
 
 Score 1 VP for each adjacent Cottage
 
 Pattern:
-![image (16)](https://user-images.githubusercontent.com/51708157/149026183-d0e9724c-441e-4cae-b11b-b61799d8c552.png)
+![Well Pattern Small](https://user-images.githubusercontent.com/51708157/149029154-b68d91ad-22dd-469f-bb40-9a58c68e174a.png)
 
 Theater:
 
 Score 1 VP for each other unique building type in the same row and column as the built Theater
 
 Pattern:
-![image (18)](https://user-images.githubusercontent.com/51708157/149026393-54d055ef-8b38-4831-a225-b9fe8456ca7d.png)
+![Theater Pattern Small](https://user-images.githubusercontent.com/51708157/149029136-057daee1-6c88-474e-8f72-3ab8c87dfddc.png)
 
 Factory:
 
 When constructed, place 1 of the 5 resources on the constructed factory. When another player names this resource (or you select this resource from your hand) you may place any resource you want instead.
 
 Pattern:
-![image (17)](https://user-images.githubusercontent.com/51708157/149026673-6657e21a-6627-4fb3-a7e8-61e08d34687d.png)
+![Factory Pattern Small](https://user-images.githubusercontent.com/51708157/149029116-0e17f31e-e78b-4826-90b2-554c429f4554.png)
 
 Why are you doing this?
 -------
@@ -80,5 +80,6 @@ You sure do ask a lot of questions. I thought it would be fun. It started as a c
 
 Can you get in trouble with AEG for this?
 -------
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
+
 it's genuinely one of my favorite board games and this is a love letter to it. please dont sue me.
